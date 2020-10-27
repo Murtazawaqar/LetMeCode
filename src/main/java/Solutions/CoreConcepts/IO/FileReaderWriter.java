@@ -10,7 +10,7 @@ import java.io.FileNotFoundException;
 public class FileReaderWriter implements ReaderWriter{
 
     private String directory = System.getProperty("user.home") + File.separator + "Desktop";
-    private String fileName = "sampleIO.txt";
+    private String fileName = "sampleFRW.txt";
     private String absolutePath = directory + File.separator + fileName;
 
     public FileReaderWriter() {
@@ -28,10 +28,10 @@ public class FileReaderWriter implements ReaderWriter{
                 System.out.print((char) character);
                 character = reader.read();
             }
-
             reader.close();
-            System.out.println("\nFile Read operation completed using FileReader");
 
+            System.out.println();
+            System.out.println("File Read operation completed using FileReader");
         } catch(FileNotFoundException exception) {
             System.out.println("FileWriter File Not Found Exception:\n" + exception);
         } catch(IOException exception) {

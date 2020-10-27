@@ -3,5 +3,5 @@ package Solutions.CoreConcepts.IO;
 public interface ReaderWriter {
 
     public void read();
-    public void write(String fileName);
+    public void write(String message);
 }
